@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,400,700");
+
+body {
+  background-color: #facfad;
+  padding: 0;
+  margin: 0;
+  font-family: Oswald, sans-serif;
+}
+
+.app {
+  display: grid;
+  height: 100vh;
+}
+
+.weatherCard {
+  background-color: #457eac;
+  display: grid;
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 3px 10px #00000080;
+}
+
+.weatherCard img {
+  margin: auto;
+  width: 30%;
+}
+
+.weatherCard p {
+  font-size: 1.5rem;
+  margin: 0.4rem;
+  font-weight: 200;
+}
+
+.weatherCard span {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.weatherCard .flag-icon {
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.search {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1rem;
+}
+
+input {
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  box-shadow: 0 0 5px #00000020;
+}
+
+button {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  background-color: #da4167;
+  color: #fff;
+  font-family: Oswald;
+  font-weight: 400;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00000020;
+  transition: 200ms background-color ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e197a1;
+  transition: 200ms background-color ease;
+}
+
+*:focus {
+  outline: none;
+}
+
+.madeBy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-weight: 200;
+  background-color: #fff;
+  height: 5rem;
+  display: grid;
+  align-items: center;
+}
+
+.madeBy a {
+  color: #457eac;
+  font-weight: 400;
+  transition: color 150ms ease;
+}
+
+.madeBy a:hover {
+  color: #e197a1;
+  transition: color 150ms ease;
+}
+
+.switch {
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  width: 50px;
+  height: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00000020;
+}
+
+.switch p {
+  text-align: center;
+  margin: 0;
+  grid-row: 1 / 2;
+}
+
+.switch p::selection {
+  background-color: #00000000;
+}
+
+.handle {
+  transition: all 500ms ease;
+  border-radius: 5px;
+}
+
+.handle::selection {
+  background-color: #00000000;
+}
