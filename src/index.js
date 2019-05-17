@@ -54,7 +54,6 @@ class App extends React.Component {
         isLoaded: false
       });
       const city = this.state.cityInput;
-      const units = this.state.degrees ? "metric" : "imperial";
       fetch(
         "https://api.openweathermap.org/data/2.5/weather?q=" +
           city +
